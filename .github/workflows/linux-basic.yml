@@ -1,0 +1,12 @@
+name: linux-practise
+on: [push]
+jobs:
+  first-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: list the files
+        run: ls -lrth 
+      - name: current working directory
+        run: pwd
+      - name: disk usage
+        run: df -h
