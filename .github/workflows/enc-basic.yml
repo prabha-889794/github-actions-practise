@@ -1,0 +1,14 @@
+name: system info practise
+on: [push] 
+jobs:
+  show-system-details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: who is running this
+        run: echo "this action was strated by $GITHUB_ACTOR"
+      - name: which repository is this
+        run: echo "the repo name is $GITHUB_REPOSITORY"
+      - name: what is the os of the runner
+        run: |
+          echo "operating system info:"
+          uname -r
