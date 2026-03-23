@@ -3,6 +3,6 @@ on: [push]
 jobs:
  my-first:
    runs-on: ubuntu-latest
-steps:
- - name: print message
-   run: echo "hello prabhakar,this is my first github actions"
+   steps:
+     - name: print message
+       run: echo "hello prabhakar,this is my first github actions"
